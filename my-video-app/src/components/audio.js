@@ -8,10 +8,7 @@ const AudioCaballo = () =>{
             <ul>
                 {arrayAudio.map(data => (
                     <li key={data.id}>
-                        <audio controls src={data.src}>
-                            {/* <source src={data.id} type="audio/mpeg"></source>
-                            Your browser does not support the audio element. */}
-                        </audio>
+                        <audio controls src={data.src}></audio>
                         <br></br>
                     </li>
                 ))}
