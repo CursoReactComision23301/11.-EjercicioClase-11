@@ -1,6 +1,6 @@
 
 import React from "react";
-import arrayAudio from "@/pages/api/videodata";
+import arrayAudio from "@/pages/api/audiodata";
 
 const AudioCaballo = () =>{
     return(
@@ -8,7 +8,7 @@ const AudioCaballo = () =>{
             <ul>
                 {arrayAudio.map(data => (
                     <li key={data.id}>
-                        <audio controls src={data.id}>
+                        <audio controls src={data.src}>
                             {/* <source src={data.id} type="audio/mpeg"></source>
                             Your browser does not support the audio element. */}
                         </audio>
